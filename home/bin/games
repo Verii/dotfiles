@@ -1,0 +1,22 @@
+#! /usr/bin/env bash
+
+GAME_LOCATION=${GAME_LOCATION:-$HOME/media/games}
+
+
+case $1 in
+df)	export LD_PRELOAD=/lib/libz.so.1 GAME="df_linux" BIN="df" ;;
+tetris)	exec urxvt256cc -e tetris ;;
+nethack) exec urxvt256cc -e nethack ;;
+sudoku)	exec gnome-sudoku ;;
+chess)	exec gnome-chess ;;
+
+eu)	GAME="EufloriaHD"	BIN="EufloriaHD.bin.x86_64" ;;
+ftl)	GAME="FTL"		BIN="FTL" ;;
+ksp)	GAME="KSP_linux"	BIN="KSP.x86_64" ;;
+*)		echo "Game not found \"$1\"" ;;
+esac
+
+[[ ! -d $GAME_LOCATION/$GAME ]] && exit 1
+
+cd $GAME_LOCATION/$GAME
+exec "`pwd`/$BIN" $FLAGS &> $GAME_LOCATION/$GAME.log

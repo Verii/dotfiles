@@ -1,0 +1,4 @@
+xrdb -load $HOME/.config/awesome/Xresources &
+urxvtd &
+nm-applet &
+redshift &

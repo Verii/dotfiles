@@ -1,0 +1,5 @@
+#! /usr/bin/env bash
+
+[[ -f ${HOME}/.config/awesome/xsession ]] && . ${HOME}/.config/awesome/xsession
+
+exec awesome

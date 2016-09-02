@@ -1,0 +1,8 @@
+Each directory contains the files where symlinks will be created to
+
+e.g. the home/ directory contains the configuration files that will be linked
+from ${HOME}/. So home/.bash_history will have a symlink created in
+/home/james/.bash_history to /home/james/projects/dotfiles/home/.bash_history
+
+In this way all configuration can be managed in this git repo, while making it
+easy to public new configuration files.
