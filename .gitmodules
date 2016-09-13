@@ -1,0 +1,12 @@
+[submodule "home/.vim/colors/jellybeans"]
+	path = home/.vim/colors/jellybeans
+	url = git@mars:jellybeans.git
+[submodule "home/.vim/colors/molokai"]
+	path = home/.vim/colors/molokai
+	url = git@mars:molokai.git
+[submodule "home/.vim/colors/solarized"]
+	path = home/.vim/colors/solarized
+	url = git@mars:solarized.git
+[submodule "home/.vim/colors/badwolf"]
+	path = home/.vim/colors/badwolf
+	url = git@mars:badwolf.git
