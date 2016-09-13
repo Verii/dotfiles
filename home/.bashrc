@@ -24,6 +24,7 @@ alias mkdir='mkdir -v'
 alias bc='bc -l'
 alias gp='gp -q'
 alias relax='mpv http://relax.stream.publicradio.org/relax.mp3'
+alias gg='git log --oneline --abbrev-commit --all --graph --decorate'
 
 source ~/.git-prompt.sh
 PS1='[\u@\h \W$(__git_ps1)]\$ '
