@@ -2,3 +2,5 @@
 [user]
 name = James Smith
 email = james@apertum.org
+[push]
+	default = simple
