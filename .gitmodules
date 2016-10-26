@@ -19,6 +19,3 @@
 [submodule "home/.vim/bundle/vim-rust"]
 	path = home/.vim/bundle/vim-rust
 	url = git@mars:vim-rust.git
-[submodule "home/.password-store"]
-	path = home/.password-store
-	url = git@mars:password-store.git

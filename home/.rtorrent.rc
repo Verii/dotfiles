@@ -18,16 +18,16 @@
 #upload_rate = 0
 
 # Default directory to save the downloaded torrents.
-directory = /home/james/downloads/
+directory = /home/j/downloads/
 
 # Default session directory. Make sure you don't run multiple instance
 # of rtorrent using the same session directory. Perhaps using a
 # relative path?
-session = /home/james/downloads/.session
+session = /home/j/downloads/.session
 
 # Watch a directory for new torrents, and stop those that have been
 # deleted.
-schedule = watch_directory,5,5,load_start=/home/james/downloads/*.torrent
+schedule = watch_directory,5,5,load_start=/home/j/downloads/*.torrent
 # */
 schedule = untied_directory,5,5,stop_untied=
 
@@ -67,7 +67,7 @@ port_random = no
 # outgoing connections but retries with encryption if they fail, preferring
 # plaintext to RC4 encryption after the encrypted handshake
 #
-# encryption = allow_incoming,enable_retry,prefer_plaintext
+encryption = allow_incoming,enable_retry,prefer_plaintext
 
 # Enable DHT support for trackerless torrents or when all trackers are down.
 # May be set to "disable" (completely disable DHT), "off" (do not start DHT),
